@@ -78,11 +78,89 @@ right:20px;
 
 <div class="container" id="biblioteca"></div>
 
-<!-- Leitor -->
 <div id="leitor">
 <button class="voltar" onclick="fecharLivro()">Voltar</button>
 <div id="conteudoCapitulo"></div>
 <br>
 <div style="text-align:center">
 <button onclick="capAnterior()">⬅ Capítulo Anterior</button>
-<button onclick="proxCap()">Pró
+<button onclick="proxCap()">Próximo Capítulo ➡</button>
+</div>
+</div>
+
+<script>
+
+const livros = [
+
+{
+titulo:"Corações na Escuridão",
+capitulos:[
+`<h2>Capítulo 1 — O Encontro</h2>
+<p>Helena caminhava sob a chuva quando encontrou Adrian.
+Havia algo nele que despertava medo e curiosidade ao mesmo tempo.</p>`,
+
+`<h2>Capítulo 2 — Segredos</h2>
+<p>Segredos perigosos começam a surgir entre eles.</p>`
+]
+},
+
+{
+titulo:"Entre Sombras e Promessas",
+capitulos:[
+`<h2>Capítulo 1 — A Cidade</h2>
+<p>Na cidade de Ravenfall, nada é o que parece.</p>`,
+
+`<h2>Capítulo 2 — Destinos</h2>
+<p>Uma promessa antiga ressurge.</p>`
+]
+},
+
+{
+titulo:"Destino Proibido",
+capitulos:[
+`<h2>Capítulo 1 — O Vínculo</h2>
+<p>Um encontro inesperado cria uma conexão intensa.</p>`,
+
+`<h2>Capítulo 2 — Escolhas</h2>
+<p>O destino exige sacrifícios.</p>`
+]
+},
+
+{
+titulo:"Obsessão Noturna",
+capitulos:[
+`<h2>Capítulo 1 — Observada</h2>
+<p>Clara sente que alguém a observa constantemente.</p>`,
+
+`<h2>Capítulo 2 — Verdade</h2>
+<p>O perigo se aproxima.</p>`
+]
+},
+
+{
+titulo:"Amor nas Cinzas",
+capitulos:[
+`<h2>Capítulo 1 — Ruínas</h2>
+<p>Dois sobreviventes encontram conforto após uma tragédia.</p>`,
+
+`<h2>Capítulo 2 — Reconstrução</h2>
+<p>Entre dor e esperança nasce um sentimento.</p>`
+]
+},
+
+{
+titulo:"Correntes do Desejo",
+capitulos:[
+`<h2>Capítulo 1 — O Acordo</h2>
+<p>Isabella aceita um acordo misterioso que mudará sua vida.</p>`,
+
+`<h2>Capítulo 2 — Limites</h2>
+<p>Algumas promessas têm um preço emocional.</p>`
+]
+},
+
+{
+titulo:"Segredos de Ravenwood",
+capitulos:[
+`<h2>Capítulo 1 — A Mansão</h2>
+<p>Uma
